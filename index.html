@@ -5,20 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Стилизация-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Test Task Advanced Web</title>
 </head>
 
 <body>
     <div class="wrapper__page">
         <!-- Заголовок страницы-->
-        <header class="header__page">
+        <header class="header">
             <div class="header__user">
                 <div class="header__user-avatar">
                     <img src="" alt="">
                 </div>
                 <div class="header__user-name">
-                    <span class="user__name"></span>
-                    <span class="user__subname"></span>
+                    <span class="user__name">Быстров Борис Викторович</span>
+                    <span class="user__subname">bystrov@gmail.com</span>
                 </div>
             </div>
             <div class="header__icons">
@@ -33,21 +37,141 @@
         <!-- Раздел о ученике-->
         <section class="about">
             <div class="wrapper__section">
-                <h1 class="about__header"></h1>
-                <h2 class="about__subheader"></h2>
-                .about__me>aboutme .about__skills
+                <h2 class="section__header about__header">О будущем учение</h2>
+                <h3 class="section__subheader about__subheader">Ребятам из LoftSchool будет полезно узнать немного обо мне</h3>
+                <ul class="about__me">
+                    <li class="about__me-item">
+                        <div class="about__item-image"><img src="" alt=""></div>
+                        <div class="about__item-header">Немного обо мне</div>
+                        <div class="about__item-text"> живу в Санкт-Петербурге (Россия). Мне 26 лет. Высшее образование - закончил НИУ ИТМО. Опыт в разработке 1 год. Уже окончил курсы в Академии Программирования, где не плохо научился верстать. Пока есть только один сайт, которым
+                            могу похвастаться: <a href="http://www.yandex.ru">www.yandex.ru</a></div>
+                    </li>
+                    <li class="about__me-item">
+                        <div class="about__item-image"><img src="" alt=""></div>
+                        <div class="about__item-header">Мой опыт в разработке</div>
+                        <div class="about__item-text">В этом блоке я расскажу о себе, что я уже умею. Здесь я укажу другие курсы, которые до этого я уже проходил. Могу перечислить технологии, которыми уже умею пользоваться. К примеру: html5, css3, sass, jade, git и пр.</div>
+                    </li>
+                </ul>
             </div>
         </section>
 
         <!-- Раздел курсы-->
         <section class="course">
             <div class="wrapper__section">
+                <h2 class="section__header about__header">Курсы на loftblog</h2>
+                <h3 class="section__subheader about__subheader">Которые мне помогут в волнении этого задания</h3>
+                <ul class="course__list">
+                    <li class="course__item">
+                        <div class="item__header">
+                            <img src="" alt="">
+                        </div>
+                        <div class="item_info">
+                            <h4 class="item__info-header">Основы Javascript</h4>
+                            <div class="item__info-text">Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.</div>
+                            <div class="item__info-time"> 24 урока (6 часов 46 минут)</div>
+                        </div>
+                        <div class="item__checkbox">
+                            <label>
+                                  <input type="checkbox" class="checkbox">
+                                  <span>Посмотрел</span>
+                                <div class="checkbox__fake"></div>
+                                </label>
+                        </div>
+                    </li>
+                    <li class="course__item">
+                        <div class="item__header">
+                            <img src="" alt="">
+                        </div>
+                        <div class="item_info">
+                            <h4 class="item__info-header">Основы Javascript</h4>
+                            <div class="item__info-text">Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.</div>
+                            <div class="item__info-time"> 24 урока (6 часов 46 минут)</div>
+                        </div>
+                        <div class="item__checkbox">
+                            <label>
+                                  <input type="checkbox" class="checkbox">
+                                  <span>Посмотрел</span>
+                                <div class="checkbox__fake"></div>
+                                </label>
+                        </div>
+                    </li>
+                    <li class="course__item">
+                        <div class="item__header">
+                            <img src="" alt="">
+                        </div>
+                        <div class="item_info">
+                            <h4 class="item__info-header">Основы Javascript</h4>
+                            <div class="item__info-text">Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.</div>
+                            <div class="item__info-time"> 24 урока (6 часов 46 минут)</div>
+                        </div>
+                        <div class="item__checkbox">
+                            <label>
+                                  <input type="checkbox" class="checkbox">
+                                  <span>Посмотрел</span>
+                                <div class="checkbox__fake"></div>
+                                </label>
+                        </div>
+                    </li>
+                    <li class="course__item">
+                        <div class="item__header">
+                            <img src="" alt="">
+                        </div>
+                        <div class="item_info">
+                            <h4 class="item__info-header">Основы Javascript</h4>
+                            <div class="item__info-text">Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.</div>
+                            <div class="item__info-time"> 24 урока (6 часов 46 минут)</div>
+                        </div>
+                        <div class="item__checkbox">
+                            <label>
+                                  <input type="checkbox" class="checkbox">
+                                  <span>Посмотрел</span>
+                                <div class="checkbox__fake"></div>
+                                </label>
+                        </div>
+                    </li>
+                    <li class="course__item">
+                        <div class="item__header">
+                            <img src="" alt="">
+                        </div>
+                        <div class="item_info">
+                            <h4 class="item__info-header">Основы Javascript</h4>
+                            <div class="item__info-text">Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.</div>
+                            <div class="item__info-time"> 24 урока (6 часов 46 минут)</div>
+                        </div>
+                        <div class="item__checkbox">
+                            <label>
+                                  <input type="checkbox" class="checkbox">
+                                  <span>Посмотрел</span>
+                                <div class="checkbox__fake"></div>
+                                </label>
+                        </div>
+                    </li>
+                    <li class="course__item">
+                        <div class="item__header">
+                            <img src="" alt="">
+                        </div>
+                        <div class="item_info">
+                            <h4 class="item__info-header">Основы Javascript</h4>
+                            <div class="item__info-text">Видеокурс о одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.</div>
+                            <div class="item__info-time"> 24 урока (6 часов 46 минут)</div>
+                        </div>
+                        <div class="item__checkbox">
+                            <label>
+                                  <input type="checkbox" class="checkbox">
+                                  <span>Посмотрел</span>
+                                <div class="checkbox__fake"></div>
+                                </label>
+                        </div>
+                    </li>
 
+                </ul>
             </div>
         </section>
         <!-- Футер-->
         <footer class="footer">
             <div class="wrapper__section">
+                <span class="footer__info">А это футер, с текстом внутри. Он должен быть прибит к низу окна браузера,
+не зависимо от количества контента на странице и размера окна.</span>
 
             </div>
         </footer>
