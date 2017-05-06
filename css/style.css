@@ -2,9 +2,17 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-* {
+html,
+body {
+    height: 100%;
+}
+
+li {
+    list-style: none;
     margin: 0;
     padding: 0;
 }
@@ -12,20 +20,311 @@
 
 /*common - общие стили*/
 
+.wrapper__page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 
-/*Хедер - заголоtвок*/
+.wrapper__section {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.about__header {
+    font-family: 'fira_sansmedium';
+    font-size: 42px;
+    color: #212121;
+    text-align: center;
+}
+
+.about__subheader {
+    font-family: fira_sanslight;
+    font-size: 21px;
+    color: #727272;
+    text-align: center;
+}
+
+.item__header {
+    font-family: fira_sansregular;
+    font-size: 21px;
+    text-align: center;
+    color: #212121;
+}
+
+.text {
+    font-family: fira_sanslight;
+    font-size: 14px;
+    color: #727272;
+}
+
+.section__subheader {
+    padding-top: 20px;
+    padding-bottom: 45px;
+}
+
+
+/*Хедер - заголовок*/
 
 .header {
     min-height: 90px;
     width: 100%;
-    background-color: #8cc34b
+    background-color: #8cc34b;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 15px 25px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__user,
+.header__icons {
+    width: 50%;
+    height: 100%;
+}
+
+.header__user {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.user__avatar {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+
+.user__name {
+    font-family: fira_sansmedium;
+    font-size: 21px;
+    color: #ffffff;
+}
+
+.user__subname {
+    font-family: fira_sansregular;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.icon__item {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.header__user-name {
+    margin-left: 20px;
+}
+
+.header__icons {
+    text-align: right;
+}
+
+svg {
+    fill: #ffffff;
+}
+
+.icon__img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.7;
+}
+
+.icon__vk {
+    width: 37.5px;
+    height: 26px;
+}
+
+.icon__img:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 
 
 /*Обо мне*/
 
+.about {
+    background-color: #ffffff;
+    padding: 80px 10px;
+}
+
+.about__me {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about__me-item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 460px;
+}
+
+.about__item-image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about__me-info {
+    flex: 4;
+    width: 300px;
+}
+
+.item__header-about {
+    padding-bottom: 20px;
+}
+
+.item__header-about,
+.about__item-text {
+    text-align: left;
+}
+
+.about__item-text {
+    line-height: 1.5em;
+}
+
 
 /*Курсы*/
 
+.color__box {
+    width: 301px;
+    height: 100%;
+    background-color: #8cc34b;
+    opacity: 0.5;
+    display: none;
+    position: absolute;
+}
+
+.course {
+    background-image: url('../img/bg__section.png');
+    flex: 1 0 auto;
+    padding: 80px 10px;
+}
+
+.course__item:hover .course__item-header {
+    color: #8cc34b;
+}
+
+.course__list {
+    display: flex;
+    flex-flow: row wrap;
+    /*justify-content: space-between;*/
+    align-items: flex-start;
+}
+
+.course__item {
+    flex-basis: 300px;
+    box-shadow: 1px 0 5px rgba(114, 114, 114, 0.5);
+    margin-bottom: 25px;
+    background-color: #ffffff;
+    margin-right: 20px;
+}
+
+.course__item:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.course__item:hover {
+    cursor: pointer;
+}
+
+.course__header {
+    height: 170px;
+    overflow: hidden;
+}
+
+.course__item:hover .course__header {
+    border-bottom: 5px solid #8cc34b;
+}
+
+.course__info {
+    padding: 20px;
+}
+
+.course__item-header {
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.fa-clock-o {
+    margin-right: 5px;
+}
+
+.item__info-time {
+    padding-top: 20px;
+    font-family: fira_sanslight;
+    font-size: 14px;
+    color: #b6b6b6;
+}
+
+.course__check {
+    height: 60px;
+    background-color: #f6f7f2;
+    padding: 20px;
+}
+
+.course__check-label {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox__text {
+    font-family: fira_sansregular;
+    font-size: 18px;
+    color: #727272;
+}
+
+.checkbox {
+    position: absolute;
+    left: -9999px;
+}
+
+.checkbox__fake {
+    width: 20px;
+    height: 20px;
+    content: '';
+    border: 2px solid #b6b6b6;
+    background-color: #ffffff;
+    display: inline-block;
+    margin-right: 19px;
+}
+
+.complete__header {
+    font-family: fira_sansmedium;
+    font-size: 41.63px;
+    color: #8cc34b;
+    text-align: center;
+    display: none;
+}
+
+.fa-complete {
+    margin-right: 20px;
+}
+
 
 /*Футер*/
+
+.footer {
+    background-color: #212121;
+    min-height: 70px;
+    overflow: hidden;
+    flex: 0 0 auto;
+}
+
+.footer__section {
+    width: 510px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.footer__info {
+    font-family: fira_sansregular;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+}
