@@ -9,6 +9,7 @@
 html,
 body {
     height: 100%;
+    min-width: 100vh;
 }
 
 li {
@@ -20,10 +21,11 @@ li {
 
 /*common - общие стили*/
 
-.wrapper__page {
+.wrapper {
     display: flex;
     flex-direction: column;
     height: 100%;
+    min-width: 100vh;
 }
 
 .wrapper__section {
@@ -213,7 +215,6 @@ svg {
 .course__list {
     display: flex;
     flex-flow: row wrap;
-    /*justify-content: space-between;*/
     align-items: flex-start;
 }
 
@@ -306,10 +307,22 @@ svg {
     margin-right: 20px;
 }
 
+.ckecked__item {
+    border: none;
+    background-image: url('../img/icons/check_bg.png');
+    color: #f6f7f2;
+    padding: 2px;
+}
+
+.display-block {
+    display: block;
+}
+
 
 /*Футер*/
 
 .footer {
+    min-width: 100%;
     background-color: #212121;
     min-height: 70px;
     overflow: hidden;
