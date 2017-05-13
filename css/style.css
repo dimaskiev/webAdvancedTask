@@ -9,7 +9,6 @@
 html,
 body {
     height: 100%;
-    min-width: 100vh;
 }
 
 li {
@@ -24,13 +23,19 @@ li {
 .wrapper {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    min-width: 100vh;
+    min-height: 100%;
+    min-width: 960px;
 }
 
 .wrapper__section {
     width: 960px;
     margin: 0 auto;
+}
+
+section,
+.header,
+.footer {
+    min-width: 980px;
 }
 
 .about__header {
@@ -204,7 +209,6 @@ svg {
 
 .course {
     background-image: url('../img/bg__section.png');
-    flex: 1 0 auto;
     padding: 80px 10px;
 }
 
@@ -318,13 +322,16 @@ svg {
     display: block;
 }
 
+.content {
+    flex: 1 0 auto;
+}
+
 
 /*Футер*/
 
 .footer {
-    min-width: 100%;
     background-color: #212121;
-    min-height: 70px;
+    height: 70px;
     overflow: hidden;
     flex: 0 0 auto;
 }
